@@ -27,7 +27,7 @@
     </div>
 
     <div class="home-container" id="posts-container">
-        <h2>Tus posts</h2>
+        <h2 id="posts-title">Tus posts</h2>
         @foreach ($posts as $post)
             <div class="post">
                 <h3 class="post-title">{{ $post->title }}</h3>

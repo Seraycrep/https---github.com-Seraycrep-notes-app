@@ -269,6 +269,40 @@ select:-webkit-autofill:focus {
     color: #eaeaea;
 }
 
+#create-post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: rgba(43, 39, 56, 0.85);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: rgba(43, 39, 56, 0.85);
+    overflow: auto;
+}
+
+#posts-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
 #edit-post-button {
     font-size: 1rem;
     font-weight: bold;
